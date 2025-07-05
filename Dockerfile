@@ -53,6 +53,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
 COPY --from=builder --chown=nextjs:nodejs /app/src ./src
 COPY --from=builder --chown=nextjs:nodejs /app/start.js ./start.js
+COPY --from=builder --chown=nextjs:nodejs /app/railway-start.js ./railway-start.js
 
 # Copy node_modules for Discord bot (важно для работы бота)
 COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./node_modules
@@ -66,4 +67,4 @@ ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
 # Start the application
-CMD ["node", "start.js"] 
+CMD ["node", "railway-start.js"] 

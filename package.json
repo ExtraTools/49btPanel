@@ -19,7 +19,8 @@
     "db:migrate": "prisma migrate deploy",
     "postinstall": "prisma generate",
     "railway:build": "prisma migrate deploy && next build",
-    "railway:start": "node start.js"
+    "railway:start": "node start.js",
+    "build": "prisma generate && next build"
   },
   "dependencies": {
     "@discordjs/builders": "^1.7.0",
