@@ -31,7 +31,7 @@ export async function GET(request: Request) {
     const [
       moderationCount,
       ticketCounts,
-      recentTickets,
+      _recentTickets,
       analyticsCount,
       warningCount,
       automodRules,
