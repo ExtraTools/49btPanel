@@ -57,7 +57,7 @@ export async function GET(request: Request) {
         analytics,
         tickets,
         moderationActions,
-        logs
+        _logs
       ] = await Promise.all([
         prisma.analytics.findMany({
           where: whereClause,

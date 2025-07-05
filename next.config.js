@@ -2,9 +2,7 @@
 const nextConfig = {
   serverExternalPackages: ['discord.js', '@discordjs/rest'],
   output: 'standalone',
-  experimental: {
-    outputFileTracingRoot: process.cwd(),
-  },
+  outputFileTracingRoot: process.cwd(),
   images: {
     domains: ['cdn.discordapp.com', 'media.discordapp.net'],
     formats: ['image/avif', 'image/webp'],
