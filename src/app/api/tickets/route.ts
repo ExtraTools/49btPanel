@@ -131,9 +131,9 @@ export async function GET(request: Request) {
       if (!acc[date]) {
         acc[date] = { created: 0, closed: 0 };
       }
-      acc[date].created++;
+      acc[date]!.created++;
       if (ticket.status === 'closed' || ticket.status === 'resolved') {
-        acc[date].closed++;
+        acc[date]!.closed++;
       }
       return acc;
     }, {} as Record<string, { created: number; closed: number }>);
