@@ -97,9 +97,9 @@ typings/
 .nuxt
 dist
 
-# Gatsby files
+# Gatsby files (not applicable for Next.js)
 .cache/
-public
+# public - keep this for Next.js static assets
 
 # Storybook build outputs
 .out

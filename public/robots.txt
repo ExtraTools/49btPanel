@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Discord Admin Panel
+# This is a private admin panel, adjust according to your needs
+Disallow: /api/
+Disallow: /dashboard/
+
+Sitemap: https://your-domain.railway.app/sitemap.xml 
